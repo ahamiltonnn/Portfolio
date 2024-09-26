@@ -1,0 +1,72 @@
+/* .footer {
+  background-color: #282c34;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.footer h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+} */
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem; /* Increased padding for more height */
+    text-align: center;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+    min-height: 80px; /* Adjust minimum height for visibility */
+  }
+  
+  .footer h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #61dafb;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
