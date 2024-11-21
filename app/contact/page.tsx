@@ -1,21 +1,21 @@
+import ContactForm from "./ContactForm";
+import styles from "./contact.module.css";
 import { Metadata } from "next";
 
-export default async function Contact() {
-    return (
-        <main>
-            <h1>Get in contact</h1>
-            <p>
-                Connect with me on{" "}
-                <a
-                    href="https://www.linkedin.com/in/austin-hamiltonn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "blue", textDecoration: "underline" }}
-                >
-                    LinkedIn,
-                </a>
-                {' '} or email me at austinhamilton.mail@proton.me
-            </p>
-        </main>
-    );
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in contact",
+};
+
+export default function Contact() {
+  return (
+    <main className={styles.contactPage}>
+      <h1 className={styles.heading}>Contact Me</h1>
+      <p className={styles.contactMessage}>
+        If you have any questions, feedback, or just want to get in touch, feel
+        free to reach out to me. I'd love to hear from you!
+      </p>
+      <ContactForm />
+    </main>
+  );
 }

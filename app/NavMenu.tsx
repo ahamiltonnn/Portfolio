@@ -7,7 +7,7 @@ export default function NavMenu() {
     <nav className={styles.nav}>
       <Link href={"/"}>
         <Image
-          src="/finalLogo.svg" // Route of the image file
+          src="/finalLogo.svg"
           width={250}
           height={50}
           alt="NextSpace Logo"
@@ -15,13 +15,13 @@ export default function NavMenu() {
       </Link>
       <ul className={styles.links}>
         <li>
+          <Link href={"/portfolio"}>Portfolio</Link>
+        </li>
+        <li>
           <Link href={"/about"}>About</Link>
         </li>
         <li>
           <Link href={"/contact"}>Contact</Link>
-        </li>
-        <li>
-          <Link href={"/portfolio"}>Portfolio</Link>
         </li>
       </ul>
     </nav>

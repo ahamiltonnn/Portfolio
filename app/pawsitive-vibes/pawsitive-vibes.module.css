@@ -1,0 +1,78 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  background-color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 1rem;
+}
+
+.projectDescription,
+.features,
+.technologies,
+.collaboration,
+.additional {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.ulList {
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: #555555;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  text-align: center;
+}
+
+.links p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .images {
+    flex-direction: column;
+  }
+}

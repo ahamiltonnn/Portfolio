@@ -1,0 +1,144 @@
+/* .carouselContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slick-slider {
+  margin: 0 auto;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carouselItem {
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.viewButton {
+  background-color: #000;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.viewButton:hover {
+  background-color: #333;
+} */
+.carouselContainer {
+  max-width: 900px; /* Reduced size of carousel */
+  margin: 0 auto;
+  padding: 1rem; /* Added padding around the carousel */
+}
+
+.slick-slider {
+  margin: 0 auto;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem; /* Added padding to the bottom to avoid cutoff */
+}
+
+.carouselItem {
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space is distributed vertically */
+  height: 100%; /* Make sure the card stretches vertically */
+  padding-bottom: 1rem; /* Ensures the button is visible */
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding-bottom: 1rem; /* Added bottom padding to ensure space between text and button */
+}
+
+.viewButton {
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1.5rem; /* Increased padding for better button appearance */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.viewButton:hover {
+  background-color: #333;
+}
+
+.slick-dots {
+  bottom: 20px; /* Adjusted dot position */
+}
+
+@media (max-width: 768px) {
+  .carouselContainer {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0; /* Remove padding on small screens */
+  }
+  .card {
+    padding: 1rem;
+    height: auto; /* Adjust card height for smaller screens */
+  }
+}
