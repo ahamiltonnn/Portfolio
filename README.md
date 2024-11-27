@@ -1,4 +1,4 @@
-# [Project Name]
+# Austin Hamilton's Personal Website
 
 ![Project Logo or Screenshot](path/to/image.png)
 

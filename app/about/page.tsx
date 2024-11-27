@@ -1,50 +1,41 @@
 import styles from "./about.module.css";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Me",
   description: "Austin Hamilton Full Stack Developer",
 };
 
-export default async function About() {
+export default function About() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.heading}>About Me</h1>
-      <p className={styles.paragraph}>
-        Innovative full stack developer with a proactive approach to
-        problem-solving, specializing in system design, back-end and front-end
-        development. Skilled in Python, JavaScript, SQL, HTML5, CSS, and
-        experienced in creating dynamic web applications using frameworks like
-        Django, React (including Next.js), and FastAPI. Proficient in
-        implementing user-centric features to enhance functionality and
-        security, with a focus on enhancing user experience and driving project
-        success.
-      </p>
-      <h2 className={styles.heading}>My Experience</h2>
-      <p className={styles.paragraph}>
-        From a young age, I developed a passion for computers and technology,
-        which ultimately led me to pursue a career in software development. I
-        started my professional journey by enrolling in the Hack Reactor
-        bootcamp by Galvanize, where I dedicated over 700 hours to mastering
-        JavaScript and Python. This immersive experience solidified my skills
-        and set a strong foundation for my career. Today, I stay actively
-        involved in the tech community by contributing to open-source projects
-        and building personal projects that push me to grow as a developer and
-        stay current with industry advancements.
-      </p>
-      <h3 className={styles.heading}>The Future</h3>
-      <p className={styles.paragraph}>
-        Looking ahead I am excited to further develop my skills as a software
-        developer and hone my proficiency through the work on new and
-        interesting projects. The aim of my roadmap is to reach a developer job
-        in order to contribute to the creation of significant applications, to
-        collaborate with an excellent team, and to lead the solution of
-        interesting problems. I am most looking forward to the chances to learn
-        new technologies, build on my full-stack developer experience, and build
-        solutions that matter. Leveraging my deep technical background and my
-        enthusiasm for technology, I am now prepared to move to the next step in
-        my career for the benefit of a progressive company.
-      </p>
+      <section className={styles.introSection}>
+        <h1 className={styles.heading}>Who I Am</h1>
+        <p className={styles.paragraph}>
+          Hi! I’m <span className={styles.highlight}>Austin Hamilton</span>, a
+          passionate <span className={styles.highlight}>full-stack developer</span> dedicated to building robust, user-centric
+          solutions. My expertise lies in <span className={styles.highlight}>Python</span>, <span className={styles.highlight}>JavaScript</span>, and frameworks like <span className={styles.highlight}>React</span> and <span className={styles.highlight}>Next.js</span>. With a strong foundation in software engineering and an eye for detail, I love crafting applications that make a difference.
+        </p>
+      </section>
+
+      <section className={styles.experienceSection}>
+        <h2 className={styles.subheading}>My Journey</h2>
+        <p className={styles.paragraph}>
+          My love for technology began at a young age, eventually leading me to enroll in the rigorous <span className={styles.highlight}>Hack Reactor bootcamp</span>, where I dedicated over 700 hours to mastering modern development techniques. This experience equipped me with not only technical skills but also the collaborative mindset necessary to excel in team environments. Today, I stay active in the development community by contributing to open-source projects and continually refining my skills.
+        </p>
+      </section>
+
+      <section className={styles.futureSection}>
+        <h2 className={styles.subheading}>Looking Ahead</h2>
+        <p className={styles.paragraph}>
+          I’m excited about the future of technology and my role within it. My goal is to collaborate on impactful projects that challenge me to innovate while creating solutions that enhance lives and drive business success. Whether working on back-end systems, front-end interfaces, or end-to-end solutions, I thrive in tackling challenges with creativity and dedication.
+        </p>
+      </section>
+
+      <Link href="/contact" passHref>
+        <button className={styles.connectButton}>Connect With Me</button>
+      </Link>
     </main>
   );
 }

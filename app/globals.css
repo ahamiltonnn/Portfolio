@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +16,78 @@ main {
   padding: 2rem;
 }
 
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: auto;
+} */
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Light theme styles (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --button-color: #000000;
+  --button-hover-color: #333333;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --button-color: #ffffff;
+  --button-hover-color: #cccccc;
+}
+
+/* Global background color */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Styling for the toggle button */
+.themeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--button-color);
+  color: var(--bg-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.themeToggle:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Main content padding */
+main {
+  flex-grow: 1;
+  padding: 2rem;
+  transition: padding 0.3s ease;
+}
+
+/* Footer Styles */
 footer {
   background-color: #282c34;
   color: white;
