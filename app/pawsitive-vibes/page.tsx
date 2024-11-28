@@ -31,6 +31,8 @@ const PawsitiveVibes = () => {
           <li>User profiles for tracking sessions</li>
           <li>Responsive design for seamless mobile and desktop experiences</li>
           <li>Customizable booking options for different training sessions</li>
+          <li>Testimonial carousel for customer reviews</li>
+          <li>Meetup page for signed-in users to connect with others for dog-related activities</li>
         </ul>
       </section>
 
@@ -38,10 +40,11 @@ const PawsitiveVibes = () => {
         <h2 className={styles.subtitle}>Technologies Used</h2>
         <ul className={styles.ulList}>
           <li>React.js</li>
-          <li>Next.js</li>
           <li>JavaScript, HTML, CSS</li>
-          <li>Node.js, Express.js</li>
-          <li>MongoDB (or any other database used)</li>
+          <li>FastAPI</li>
+          <li>JWT Authentication</li>
+          <li>SQL Database</li>
+          <li>Docker</li>
         </ul>
       </section>
 
@@ -64,48 +67,34 @@ const PawsitiveVibes = () => {
           dynamically reflect availability and allow clients to book their
           sessions easily.
         </p>
+        <p>
+          Additionally, we integrated a testimonial carousel, allowing customers
+          to write reviews. We also developed a meetup page for signed-in users
+          to connect with others for dog-related activities, ensuring that only
+          authorized users could participate.
+        </p>
+        <p>
+          On the backend, we built a robust authentication system using JWT
+          tokens to secure user sessions, and the entire app was built with
+          FastAPI, Docker, SQL, and a fully RESTful API for smooth communication
+          between the front-end and back-end.
+        </p>
       </section>
 
       <section className={styles.imageSection}>
         <h2 className={styles.subtitle}>Screenshots</h2>
         <div className={styles.images}>
           <img
-            src="/path-to-your-image.jpg"
+            src="/Screenshot 2024-05-14 115303.png"
             alt="Pawsitive Vibes - Screenshot 1"
             className={styles.image}
           />
           <img
-            src="/path-to-your-image2.jpg"
+            src="/pawsitive-vibes2.jpg"
             alt="Pawsitive Vibes - Screenshot 2"
             className={styles.image}
           />
         </div>
-      </section>
-
-      <section className={styles.links}>
-        <h2 className={styles.subtitle}>Project Links</h2>
-        <p>
-          Check out the live project:{" "}
-          <a
-            href="https://your-live-project-url.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
-            Live Demo
-          </a>
-        </p>
-        <p>
-          View the GitHub repository:{" "}
-          <a
-            href="https://github.com/your-username/pawsitive-vibes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.link}
-          >
-            GitHub Repo
-          </a>
-        </p>
       </section>
     </main>
   );

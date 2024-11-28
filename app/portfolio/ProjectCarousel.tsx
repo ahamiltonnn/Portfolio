@@ -16,16 +16,17 @@ const projects = [
   {
     id: 2,
     title: "CarCar",
-    description: "Description of Project 2.",
+    description: "A website to manage your car dealership.",
     imageUrl: "/carcar.png",
-    projectLink: "/project-2",
+    projectLink: "/CarCar",
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "Description of Project 3.",
-    imageUrl: "/path-to-your-image3.jpg",
-    projectLink: "/project-3",
+    title: "Wardrobify",
+    description:
+      "The only thing you'll need to organize all your shoes and hats.",
+    imageUrl: "/wardobifyForm.png",
+    projectLink: "/wardrobify",
   },
 ];
 
