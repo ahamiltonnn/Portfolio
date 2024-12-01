@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className={styles.imageContainer}>
           <Image
-            src=""
+            src="/resumephoto.jpg"
             alt="Austin Hamilton"
             width={350}
             height={350}

@@ -19,12 +19,12 @@ const CarCar = () => {
       <section className={styles.projectDescription}>
         <h2 className={styles.subtitle}>Project Overview</h2>
         <p>
-          <span className={styles.highlight}>CarCar</span> is a web application developed to streamline business
-          operations for car dealerships. The application provides a
-          comprehensive set of features, from managing technicians and
-          salespeople to tracking customer information and maintaining an
-          inventory of vehicles for sale. This project was developed
-          collaboratively during the{" "}
+          <span className={styles.highlight}>CarCar</span> is a web application
+          developed to streamline business operations for car dealerships. The
+          application provides a comprehensive set of features, from managing
+          technicians and salespeople to tracking customer information and
+          maintaining an inventory of vehicles for sale. This project was
+          developed collaboratively during the{" "}
           <span className={styles.highlight}>Hack Reactor bootcamp</span>,
           utilizing modern tools and frameworks to deliver a robust and
           efficient solution.

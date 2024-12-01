@@ -10,7 +10,7 @@ export default function NavMenu() {
           src="/finalLogo.svg"
           width={250}
           height={50}
-          alt="NextSpace Logo"
+          alt="AHlogo"
         />
       </Link>
       <ul className={styles.links}>
