@@ -34,7 +34,7 @@ The goal is to provide potential employers, collaborators, and clients with an i
   - **Pawsitive Vibes**
   - **CarCar**
   - **Wardrobify**
-- **Contact Form:** A simple form for users to reach out directly.
+- **Contact Form:** A simple form utilizing EmailJS for users to reach out directly.
 - **Custom Animations:** Subtle animations to enhance user engagement.
 - **Search Engine Optimization (SEO):** Meta tags and optimized structure to improve discoverability.
 
@@ -44,10 +44,10 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone https://github.com/ahamiltonnn/Portfolio.git
 2. Navigate to project directory
     ```bash
-   cd portfolio-website
+   cd Portfolio
 3. Install dependencies:
    ```
    npm install
